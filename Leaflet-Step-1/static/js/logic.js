@@ -11,7 +11,7 @@ var myMap=L.map("mapid",{
       accessToken: API_KEY
     }).addTo(myMap);
     
-    var url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+    var url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
     
     d3.json(url, function(response){
       console.log(response);
